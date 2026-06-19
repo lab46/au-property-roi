@@ -55,7 +55,7 @@ function Layout({ children }) {
             </div>
           </div>
           <div className="border-t border-gray-200 pt-4 text-center text-xs text-gray-500">
-            © {new Date().getFullYear()} PropertyROI.com.au — Free Australian Property Investment Calculator. For educational purposes only.
+            © {new Date().getFullYear()} AUPropertyROI — Free Australian Property Investment Calculator. For educational purposes only.
           </div>
         </div>
       </footer>
