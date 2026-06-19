@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  /* 1. Define your primary color shades properly for v4 */
+  --color-primary-500: #ff5a5f; /* Replacing your brand-primary with a standard weight */
+  --color-primary-600: #e04e52; /* Slightly darker for hover states */
+  --color-primary-700: #c24346; /* Darker still for active/hover states */
+  
+  --font-display: "Inter", sans-serif;
+}
+
+/* 2. Global base styles no longer need @layer base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* 3. Custom component classes use @utility in Tailwind v4 */
+@utility btn-primary {
+  @apply px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed;
+}
+
+@utility btn-secondary {
+  @apply px-4 py-2 bg-gray-200 text-gray-900 rounded-lg hover:bg-gray-300 transition-colors;
+}
+
+@utility input-field {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+}
+
+@utility card {
+  @apply bg-white rounded-lg shadow-md p-6;
+}
